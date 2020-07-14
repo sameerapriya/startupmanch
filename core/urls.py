@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import *
+from .views import data
 
 urlpatterns = [
-    path('k/',SwaggerSchemaView.as_view() ),
+    path('k/', data),
 ]

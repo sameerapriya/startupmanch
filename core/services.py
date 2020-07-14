@@ -17,7 +17,7 @@ def get_companies():
             'https://api.data.gov.in/resource/98c6113a-cf4f-45cc-a245-5084d1b0bd59?api-key=579b464db66ec23bdd0000016e2fa803b03e4052554b7cc3237311b2&format=json&offset=0&limit=100',
             'https://api.data.gov.in/resource/11d4b398-3f85-4e5e-813c-fe105a17c02c?api-key=579b464db66ec23bdd0000016e2fa803b03e4052554b7cc3237311b2&format=json&offset=0&limit=100',
             'https://api.data.gov.in/resource/595039cd-edcd-47af-b4e4-d37a9d15b36b?api-key=579b464db66ec23bdd0000016e2fa803b03e4052554b7cc3237311b2&format=json&offset=0&limit=10',
-            '']
+            ]
     companies = []
     for url in urls:
         companies += get_data(url)
