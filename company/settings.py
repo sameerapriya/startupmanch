@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'core',
     'rest_framework',
+    'drf_yasg',
 
 ]
 
