@@ -11,7 +11,7 @@ from rest_framework import status
 from .models import Company
 
 
-def data(request):
+def data():
     """ Company API """
     k_data = get_companies()
     Company.objects.create(data=k_data)
@@ -23,4 +23,5 @@ class CompanyView(viewsets.GenericViewSet, mixins.ListModelMixin):
     queryset = Company.objects.all()
 
     def get_queryset(self):
+        data()
         return self.queryset.filter()
